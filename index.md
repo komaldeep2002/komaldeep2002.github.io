@@ -1,4 +1,5 @@
-- WHAT IS REACT
+```diff
+-WHAT IS REACT
 React is a JavaScript library for building user interfaces. It creates reusable UI components.
 
 - Why i chose this
