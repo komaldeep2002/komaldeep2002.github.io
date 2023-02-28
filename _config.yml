@@ -2,7 +2,6 @@ title: "Reacting to react"
 author: "Komaldeep Kaur"
 description: "REACT: Open-source javascriptLibrary to buit User Interfaces."
 email: "komaldeepkauk024@gmail.com"
-twitter_username: "twitteruser"
 github_username: "komaldeep2002"
 
 
@@ -11,7 +10,7 @@ github_username: "komaldeep2002"
 #########################################################################################
 theme: "minima"
 
-rss: rss
+
 
 kramdown:
   syntax_highlighter_opts:
