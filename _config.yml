@@ -3,6 +3,7 @@ author: "Komaldeep Kaur"
 description: "REACT: Open-source javascriptLibrary to buit User Interfaces."
 email: "komaldeepkauk024@gmail.com"
 github_username: "komaldeep2002"
+twitter_username: "Deep_Virk_0"
 
 
 #########################################################################################
@@ -10,7 +11,7 @@ github_username: "komaldeep2002"
 #########################################################################################
 theme: "minima"
 
-
+rss: "rss"
 
 kramdown:
   syntax_highlighter_opts:
