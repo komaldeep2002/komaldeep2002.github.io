@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" type="text/css" href="style.css">
 
 **Reacting To React** ![Alt text](/react-app-1.png)
 
