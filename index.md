@@ -4,6 +4,18 @@ layout: default
 
 <link rel="stylesheet" type="text/css" href="style.css">
 
+<style>
+h1 {
+  background-color: white;
+}
+h2 {
+  background-color: white;
+}
+h3 {
+  background-color: white;
+}
+</style>
+
 # **Reacting To React**
 ![Alt text](/react-app-1.png)
 
