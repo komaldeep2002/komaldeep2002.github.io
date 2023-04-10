@@ -1,95 +1,51 @@
 
-**- WHAT IS REACT**
+**Reacting To React**
+**React App 1**
+**what i have discussed in my last blog**
+React JS was developed by Facebook and released as an open-source project in 2013. It has since gained popularity among developers due to its simplicity and scalability. React JS is a popular JavaScript library used for building user interfaces. It is known for its ability to create dynamic and interactive web applications with ease. One of the key benefits of React is its ability to create reusable components, which can save developers time and reduce code duplication. React also has a large and active community, which means there are plenty of resources available for learning and troubleshooting. In addition to building web applications, React can also be used for building mobile applications using frameworks such as React Native. This allows for code reuse between web and mobile applications, making development more efficient. React also has a feature called virtual DOM, which allows for faster rendering of changes to the UI. When a component's state changes, React updates the virtual DOM, which is a lightweight representation of the actual DOM. React then calculates the difference between the old and new virtual DOM and updates the actual DOM only where necessary. React can be used with a variety of other libraries and frameworks, such as Redux for state management and React Router for routing. This makes React a versatile tool for building complex web applications. In this blog post, we will explore the basics of React JS by building a simple maths calculator. We will cover the key concepts of React JS such as components, state, and props, and how they are used to create interactive UI elements. In React, components are the building blocks of UI elements. They are reusable pieces of code that can be used to create complex UIs. Components can be either functional or class components. State is a built-in object in React that allows components to store and manage data. State is used to keep track of the current values of variables that can change over time. When state changes, the component is re-rendered to reflect the new values. Props, short for properties, are used to pass data from a parent component to a child component. Props are read-only and cannot be modified by the child component. Props are used to customize the behavior of a child component and make it more dynamic. To create interactive UI elements in React, you can use state and props to manage the data and functionality of the component. For example, you can create a button component that displays a count and increments the count when clicked.
 
-React is a JavaScript library for building user interfaces. It creates reusable UI components.
+**Setting Up the React Environment**
+Before we begin, we need to set up the React environment. We will be using Create React App, a tool created by Facebook for setting up a new React project. The first step in setting up the React environment is to install Node.js. Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside of a web browser. It includes npm, the Node Package Manager, which is used to install and manage third-party packages or libraries that are needed for a project. Once we have Node.js installed, we can use the command line interface (CLI) to run a command that creates a new React project using Create React App. Create React App is a command-line tool that generates a starter kit for a React project. It sets up the development environment with all the necessary configuration files and dependencies pre-installed. Now, we can open our terminal and run the following command:
+
+**npx create-react-app math-calculator**
+The command npx create-react-app math-calculator creates a new React project called "math-calculator" in our current directory. This command will take a few minutes to complete as it downloads all the necessary dependencies and sets up the project files. Once the command finishes, we will have a new folder called "math-calculator" in our directory. Finally, we can open the project in our preferred text editor, such as Visual Studio Code. Visual Studio Code is a free and open-source code editor developed by Microsoft. It has built-in support for JavaScript, React, and many other programming languages and frameworks. Opening the project in our text editor will allow us to start building our math calculator using React.
+
+**Building the UI Components**
+The first step in building our maths calculator is to create the UI components. In React, a component is a reusable piece of code that defines the structure and behavior of a UI element. We will create two components: Display and Keypad. The Display component will display the result of the calculations, and the Keypad component will contain the buttons for performing the calculations. We will start by creating the Display component.
+
+**Display Component**
+We will create a new file called Display.js in the src folder of our project. In this file, we will define the Display component. The code for the Display component is as follows:
 
 
+In the code above, we have imported the React library and defined a functional component called Display. The Display component takes a prop called result, which is the current result of the calculations. The component returns a div with a class of display, which contains an h2 element that displays the current result.
 
-- Getting started with React
+**Keypad Component**
+Next, we will create the Keypad component. We will create a new file called Keypad.js in the src folder of our project. In this file, we will define the Keypad component. The code for the Keypad component is as follows:
 
-To get started with React, you'll need to have a basic understanding of HTML, CSS, and JavaScript. You'll also need to have Node.js installed on your computer.
-Once you have Node.js installed, you can create a new React project using the create-react-app command. Here's an example:
 
-+ npx create-react-app my-app
-+ cd my-app
-+ npm start
+In the code above, we have imported the React library and defined a functional component called Keypad. The Keypad component takes a prop called handleClick, which is a function that handles the button clicks. The component returns a div with a class of keypad, which contains the buttons for performing the calculations.
 
-**- Why i chose this**
+**Creating the App Component**
+Now that we have created the Display and Keypad components, we can create the App component. The App component will be the parent component that will render the Display and Keypad components. We will create a new file called App.js in the src folder of our project. In this file, we will define the App component. The code for the App component is as follows:
 
--First of all it is a very demanding and popular language and as for our capstone we are using this so that is one of the main reasons for me to choose this.
 
--Secondly,
-React's declarative syntax allows developers to describe the desired state of their UI without worrying about the underlying implementation details.
-And React components can be easily reused across different parts of an application, which can save time and improve code maintainability.
+In the code above, we have imported the React library and defined the App component. The App component uses the useState hook to define a state variable called result, which is initially set to an empty string. The component also defines a function called handleClick, which handles the button clicks. The handleClick function checks if the button clicked is the equals sign (=) or the clear button (C). If the button clicked is the equals sign, the function uses the eval() function to evaluate the expression and update the result. If the button clicked is the clear button, the function resets the result to an empty string. If any other button is clicked, the function appends the button to the result. The App component returns a div with a class of app, which contains the title of the calculator, the Display component, and the Keypad component. The handleClick function is passed to the Keypad component as a prop.
 
--Reusability of components:
-Developers can reuse the components in different projects and these components can be customized I really loved that factor as i will be needing to reuse some of the components again and again to build a web application and i can customize them according to my choice in different phases.
+**Styling the Calculator**
+Finally, we can add some styles to our calculator to make it look more visually appealing. We will create a new file called App.css in the src folder of our project. In this file, we will define the styles for the calculator. The code for the App.css file is as follows:
 
-With the help of DOM (Document Object Model) react also enhances the performance of web application. 
 
-**-Now the question is How it works?**
-So as for performance improvement react only updates the parts that have some changes instead of updating entire DOM.
+**Creating the Calculator Component**
+Now that we have set up the basic structure of our application, let's move on to creating the Calculator component. This component will handle all the logic related to the calculator and display the result on the screen. Here's how we can create the component:
 
-To build complex UI react uses declarative programming. I just need to enter what i want to happen then react will take care of implementation which simplifies programming, reduce errors make it easy to make changes or understand the code. 
 
-**-What else i have learned and noticed:**
+In the above code, we first import the useState hook from the react package. We then define two state variables, result and input, using the useState hook. The result variable will hold the result of the calculations, while the input variable will hold the user input. We then define four event handler functions, handleAdd, handleSubtract, handleMultiply, and handleDivide. These functions will perform the corresponding mathematical operations and update the result variable with the result. We also call the setInput function to reset the input field after each operation. Finally, we return a JSX template that displays an input field for the user to enter input, four buttons for each mathematical operation, and a paragraph that displays the current value of the result variable.
 
-A syntax extension jsx that allows to write code like html in javascript. 
+**Using the Calculator Component**
+Now that we have created the Calculator component, let's use it in our App component. Here's the updated code for the App component:
 
--JSX File
 
-<div>Hello </div>  
+In the above code, we first import the Calculator component from the ./Calculator file. We then include the Calculator component in our JSX template. When we run the application, we should now see the calculator component displayed on the screen.
 
--Corresponding Output
-
-React.createElement("div", null, "Hello"); 
-
-This creates react element and pass three arguments inside first is the name of the element which is div, second is the attributes passed in the div tag, and last is the content i.e. hello.
-
-**-Why to use jsx?** 
-
-It is faster than javascript. And we can find errors in compilation state in jsx and templates can be made easily with this. It its performance by optimization 
-
--Next i am going to explain about react components that is another interesting feature of react . It is considered and basic building blocks for react. It makes easy to make components in react. They have their own structure, methods and API’s and these can also be reused. 
- 
-So the components in react are of two types one is **functional component** which is also called stateless components so as we can understand from name that they don’t have any state 
-1. function WelcomeMessage(props) {  
-2.   return <h1>Welcome , {props.name}</h1>;  
-3. }  
-
-and the second one is **class components** these are more complex than functional components these are called stateful components because they hold state 	
-class MyComponent extends React.Component {  
-1.   render() {  
-2.     return (  
-3.       <div>component.</div>  
-4.     );  
-5.   }  
-6. }
-
-**how can i forget to discuss the pros and cons of react**
-
-**PROS**
-
--what else first pro of this would be easy to learn and use if a developer has knowledge of JS  he/she can learn basic react in just few days. 
-
--dynamic web applications can be easily created with the use of react as it provides less coding and more functionality by using jsx (java script extension)
-
--once again i am mentioning it is reusable. Each and every component in react has its own logics and controls those create reusable pieces of code that hels the web development process a bit more easir than using other programming language.
-
--React developer toolshelp to inspect react component heirarchies in virual DOMand select, examine, edit props and state.
-
--React applications are very easy to test and debug this can be done with the help of native tools.
-
--It has java script library that provides more flexibility to developers to choose what they want.
-
-**CONS**
-
--it has high apce of development as there are new changes or updates on rehgular basis so sometimes it is difficult to cope with these updates.
-
--As it only has the UI layers so the developers has to choose some other tools for development of web applications.
-
-- I got to know in my search that for some developers jsx is a barrier and it is a bit complex as it allows html with javascript mixxed together
-
-At Last
+**At Last**
 In this tutorial, we learned how to create a basic maths calculator using React. We first set up the basic structure of our application, then created a Calculator component to handle the calculations and display the result. We also learned how to use the useState hook to manage state within our components. This was just a basic example, but the concepts and techniques we learned here can be applied to more complex applications. With React, we can easily build powerful and dynamic user interfaces that respond to user input in real-time.
-
