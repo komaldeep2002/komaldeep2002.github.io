@@ -16,35 +16,36 @@ The first step in building our maths calculator is to create the UI components. 
 
 **Display Component**
 We will create a new file called Display.js in the src folder of our project. In this file, we will define the Display component. The code for the Display component is as follows:
-
+![Alt text](/1.png)
 
 In the code above, we have imported the React library and defined a functional component called Display. The Display component takes a prop called result, which is the current result of the calculations. The component returns a div with a class of display, which contains an h2 element that displays the current result.
 
 **Keypad Component**
 Next, we will create the Keypad component. We will create a new file called Keypad.js in the src folder of our project. In this file, we will define the Keypad component. The code for the Keypad component is as follows:
-
+![Alt text](/2.png)
 
 In the code above, we have imported the React library and defined a functional component called Keypad. The Keypad component takes a prop called handleClick, which is a function that handles the button clicks. The component returns a div with a class of keypad, which contains the buttons for performing the calculations.
 
 **Creating the App Component**
 Now that we have created the Display and Keypad components, we can create the App component. The App component will be the parent component that will render the Display and Keypad components. We will create a new file called App.js in the src folder of our project. In this file, we will define the App component. The code for the App component is as follows:
-
+![Alt text](/3.png)
 
 In the code above, we have imported the React library and defined the App component. The App component uses the useState hook to define a state variable called result, which is initially set to an empty string. The component also defines a function called handleClick, which handles the button clicks. The handleClick function checks if the button clicked is the equals sign (=) or the clear button (C). If the button clicked is the equals sign, the function uses the eval() function to evaluate the expression and update the result. If the button clicked is the clear button, the function resets the result to an empty string. If any other button is clicked, the function appends the button to the result. The App component returns a div with a class of app, which contains the title of the calculator, the Display component, and the Keypad component. The handleClick function is passed to the Keypad component as a prop.
 
 **Styling the Calculator**
 Finally, we can add some styles to our calculator to make it look more visually appealing. We will create a new file called App.css in the src folder of our project. In this file, we will define the styles for the calculator. The code for the App.css file is as follows:
-
+![Alt text](/4.png)
 
 **Creating the Calculator Component**
 Now that we have set up the basic structure of our application, let's move on to creating the Calculator component. This component will handle all the logic related to the calculator and display the result on the screen. Here's how we can create the component:
-
+![Alt text](/5.1.png)
+![Alt text](/5.2.png)
 
 In the above code, we first import the useState hook from the react package. We then define two state variables, result and input, using the useState hook. The result variable will hold the result of the calculations, while the input variable will hold the user input. We then define four event handler functions, handleAdd, handleSubtract, handleMultiply, and handleDivide. These functions will perform the corresponding mathematical operations and update the result variable with the result. We also call the setInput function to reset the input field after each operation. Finally, we return a JSX template that displays an input field for the user to enter input, four buttons for each mathematical operation, and a paragraph that displays the current value of the result variable.
 
 **Using the Calculator Component**
 Now that we have created the Calculator component, let's use it in our App component. Here's the updated code for the App component:
-
+![Alt text](/6.png)
 
 In the above code, we first import the Calculator component from the ./Calculator file. We then include the Calculator component in our JSX template. When we run the application, we should now see the calculator component displayed on the screen.
 
