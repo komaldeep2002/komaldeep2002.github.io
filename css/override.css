@@ -8,6 +8,64 @@ hr {
   display: flex;
 }
 
+body {
+    background-color: #5f9ea0;
+    background-image: linear-gradient(to bottom, #5f9ea0, #2e8b57);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 48px;
+    text-shadow: 2px 2px #000;
+  }
+
+  h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 48px;
+    text-shadow: 2px 2px #000;
+  }
+  h4 {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 48px;
+    text-shadow: 2px 2px #000;
+  }
+  
+  p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #2e8b57;
+  }
+  
+
+  img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  }
+
+
 .post_navi-label {
   font-size: 0.8em;
   opacity: 0.5;
