@@ -90,10 +90,6 @@ class MyComponent extends React.Component {  
 
 - I got to know in my search that for some developers jsx is a barrier and it is a bit complex as it allows html with javascript mixxed together
 
-**At last some FACTS about react:**
-1. It was created by facebook in 2011
-2. It is a library not a front-end framework
-3. Virtual DOM is faster than th real DOM.
-4. it has thousands of users in each community according to data collected by react's official website.
-5. From facebook to netflix many high profile companies have adopted to react.
+At Last
+In this tutorial, we learned how to create a basic maths calculator using React. We first set up the basic structure of our application, then created a Calculator component to handle the calculations and display the result. We also learned how to use the useState hook to manage state within our components. This was just a basic example, but the concepts and techniques we learned here can be applied to more complex applications. With React, we can easily build powerful and dynamic user interfaces that respond to user input in real-time.
 
